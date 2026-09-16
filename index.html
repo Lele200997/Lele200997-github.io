@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Sentieri — racconti ed itinerari a piedi tra le montagne e le coste italiane.">
-<title>Sentieri — cammini italiani</title>
+<meta name="description" content="Eleonora Muto — Marketing Data & Measurement, AI Search, Automation. Portfolio in costruzione.">
+<title>Eleonora Muto — Marketing Data & Measurement</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -82,7 +82,7 @@
   }
   .brand{
     display:flex; align-items:center; gap:10px;
-    font-family:'Fraunces', serif; font-size:1.3rem; font-weight:600;
+    font-family:'Fraunces', serif; font-size:1.25rem; font-weight:600;
     letter-spacing:0.01em;
   }
   .brand svg{ width:26px; height:26px; }
@@ -124,8 +124,8 @@
     display:grid; grid-template-columns: 1.1fr 0.9fr; gap:40px; align-items:center;
   }
   .hero .eyebrow{ color:var(--moss); font-size:0.95rem; margin-bottom:14px; }
-  .hero h1{ font-size:clamp(2.4rem, 5vw, 3.6rem); max-width:11ch; }
-  .hero .lede{ margin-top:22px; max-width:42ch; color:var(--text-soft); font-size:1.08rem; }
+  .hero h1{ font-size:clamp(2.2rem, 4.6vw, 3.3rem); max-width:14ch; }
+  .hero .lede{ margin-top:22px; max-width:46ch; color:var(--text-soft); font-size:1.08rem; }
   .hero .cta-row{ margin-top:32px; display:flex; gap:16px; flex-wrap:wrap; }
   .btn{
     display:inline-block; padding:13px 26px; border-radius:3px;
@@ -155,15 +155,14 @@
   }
   .featured .art{ background:var(--surface); border:1px solid var(--line); border-radius:4px; padding:26px; }
   .featured .tag{ color:var(--terra); font-size:0.85rem; margin-bottom:10px; }
-  .featured h3{ font-size:1.9rem; margin-bottom:14px; }
+  .featured h3{ font-size:1.8rem; margin-bottom:14px; }
   .featured p.excerpt{ color:var(--text-soft); }
-  .meta-row{ display:flex; gap:18px; margin-top:20px; font-size:0.86rem; color:var(--text-soft); }
-  .read-link{ margin-top:24px; display:inline-flex; align-items:center; gap:8px; color:var(--forest); font-weight:500; }
-  :root[data-theme="dark"] .read-link, .read-link{ color:var(--terra); }
+  .meta-row{ display:flex; gap:18px; margin-top:20px; font-size:0.86rem; color:var(--text-soft); flex-wrap:wrap; }
+  .read-link{ margin-top:24px; display:inline-flex; align-items:center; gap:8px; color:var(--terra); font-weight:500; background:none; border:none; padding:0; font-size:0.95rem; }
 
   @media (max-width:760px){ .featured{ grid-template-columns:1fr; } }
 
-  /* ---------- ARTICLE LIST (editorial rows) ---------- */
+  /* ---------- LIST (editorial rows) ---------- */
   .article-rows{ border-top:1px solid var(--line); }
   .article-row{
     display:grid; grid-template-columns: 140px 1fr auto; gap:26px; align-items:center;
@@ -173,19 +172,20 @@
   }
   .article-row .thumb{ width:100%; height:100px; border-radius:3px; overflow:hidden; background:var(--surface); border:1px solid var(--line); }
   .article-row .thumb svg{ width:100%; height:100%; }
-  .article-row h4{ font-size:1.18rem; margin-bottom:6px; }
+  .article-row h4{ font-size:1.15rem; margin-bottom:6px; }
   .article-row .excerpt{ color:var(--text-soft); font-size:0.94rem; max-width:52ch; }
-  .article-row .stats{ font-size:0.82rem; color:var(--text-soft); white-space:nowrap; text-align:right; }
+  .article-row .stats{ font-size:0.8rem; color:var(--text-soft); white-space:nowrap; text-align:right; }
   .article-row .stats span{ display:block; }
+  .article-row .stats .status{ color:var(--terra); font-weight:500; margin-top:2px; }
   @media (max-width:620px){
     .article-row{ grid-template-columns:90px 1fr; }
     .article-row .stats{ display:none; }
   }
 
-  /* ---------- ABOUT ---------- */
+  /* ---------- ABOUT / PERCORSO ---------- */
   .about-hero{ padding:60px 0 20px; display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; }
-  .about-hero h1{ font-size:clamp(2.1rem,4vw,2.9rem); }
-  .about-hero p{ margin-top:18px; color:var(--text-soft); max-width:48ch; }
+  .about-hero h1{ font-size:clamp(2rem,3.6vw,2.7rem); }
+  .about-hero p{ margin-top:18px; color:var(--text-soft); max-width:50ch; }
   .stat-strip{ display:flex; gap:36px; margin-top:34px; flex-wrap:wrap; }
   .stat-strip div p:first-child{ font-family:'Fraunces', serif; font-size:1.9rem; color:var(--forest); }
   .stat-strip div p:last-child{ font-size:0.85rem; color:var(--text-soft); margin-top:2px; }
@@ -209,23 +209,23 @@
 
   .form-note{ margin-top:6px; font-size:0.82rem; color:var(--text-soft); }
 
-  /* ---------- ARTICLE DETAIL ---------- */
+  /* ---------- DETAIL ---------- */
   .article-detail{ padding:50px 0 90px; }
   .back-link{ display:inline-flex; gap:8px; align-items:center; color:var(--text-soft); font-size:0.9rem; margin-bottom:30px; border:none; background:none; padding:0; }
   .back-link:hover{ color:var(--terra); }
   .article-detail .tag{ color:var(--terra); font-size:0.85rem; }
-  .article-detail h1{ font-size:clamp(2rem, 4vw, 2.9rem); margin-top:12px; max-width:20ch; }
+  .article-detail h1{ font-size:clamp(1.9rem, 3.6vw, 2.6rem); margin-top:12px; max-width:24ch; }
   .article-detail .meta-row{ margin-top:18px; }
   .detail-art{ margin:36px 0; background:var(--surface); border:1px solid var(--line); border-radius:4px; padding:20px; }
   .detail-stats{ display:flex; gap:0; border:1px solid var(--line); border-radius:4px; overflow:hidden; margin:30px 0 40px; }
   .detail-stats div{ flex:1; padding:16px 18px; border-right:1px solid var(--line); }
   .detail-stats div:last-child{ border-right:none; }
   .detail-stats p:first-child{ font-size:0.78rem; color:var(--text-soft); margin-bottom:4px; }
-  .detail-stats p:last-child{ font-family:'Fraunces', serif; font-size:1.15rem; }
+  .detail-stats p:last-child{ font-family:'Fraunces', serif; font-size:1.1rem; }
   .article-body{ max-width:66ch; }
   .article-body p{ margin-bottom:20px; color:var(--text); }
-  .article-body p.lede{ font-size:1.12rem; color:var(--text-soft); }
-  .pull{ font-family:'Fraunces', serif; font-style:italic; font-size:1.4rem; line-height:1.4; color:var(--forest); border-left:3px solid var(--gold); padding-left:22px; margin:36px 0; max-width:56ch; }
+  .article-body p.lede{ font-size:1.1rem; color:var(--text-soft); }
+  .pull{ font-family:'Fraunces', serif; font-style:italic; font-size:1.35rem; line-height:1.4; color:var(--forest); border-left:3px solid var(--gold); padding-left:22px; margin:36px 0; max-width:56ch; }
   @media (max-width:620px){ .detail-stats{ flex-wrap:wrap; } .detail-stats div{ flex:1 1 45%; border-bottom:1px solid var(--line); } }
 
   /* ---------- FOOTER ---------- */
@@ -239,14 +239,14 @@
 <nav class="site-nav">
   <div class="wrap">
     <div class="brand">
-      <svg viewBox="0 0 24 24" fill="none"><path d="M2 19L9 6l4 7 2-3 7 9H2z" fill="var(--forest)"/></svg>
-      Sentieri
+      <svg viewBox="0 0 24 24" fill="none"><circle cx="4" cy="18" r="2.4" fill="var(--terra)"/><circle cx="12" cy="11" r="2.4" fill="var(--gold)"/><circle cx="20" cy="5" r="2.4" fill="var(--forest)"/><path d="M4 18L12 11L20 5" stroke="var(--forest)" stroke-width="1.6" fill="none"/></svg>
+      Eleonora Muto
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Apri il menu"><span></span></button>
     <ul class="nav-links" id="navLinks">
       <li><button data-nav="home" class="active">Home</button></li>
-      <li><button data-nav="articles">Articoli</button></li>
-      <li><button data-nav="about">Chi sono</button></li>
+      <li><button data-nav="percorso">Percorso</button></li>
+      <li><button data-nav="progetti">Progetti</button></li>
       <li><button data-nav="contact">Contatti</button></li>
     </ul>
   </div>
@@ -258,68 +258,73 @@
   <section class="page active" id="page-home">
     <div class="hero">
       <div>
-        <p class="eyebrow">Racconti di cammino</p>
-        <h1>Storie da percorrere un passo alla volta.</h1>
-        <p class="lede">Diari di sentieri italiani, tra crinali appenninici, dolomiti e coste scolpite dal vento — con dislivelli, tempi di percorrenza e quello che le mappe non dicono.</p>
+        <p class="eyebrow">Marketing Data & Measurement · AI Search · Automation</p>
+        <h1>Trasformo i dati in decisioni di marketing chiare.</h1>
+        <p class="lede">Analista con solido background IT e systems analysis, in transizione verso il marketing data & measurement. Sto studiando un corso SEO aggiornato al 2026, poi GA4, Search Console e automazione con Python — portando lo stesso rigore che uso da anni nella validazione del software dentro l'analisi dei dati di marketing.</p>
         <div class="cta-row">
-          <button class="btn btn-solid" data-nav="articles">Leggi gli articoli</button>
-          <button class="btn btn-outline" data-nav="about">Chi scrive</button>
+          <button class="btn btn-solid" data-nav="percorso">Il mio percorso</button>
+          <button class="btn btn-outline" data-nav="contact">Scrivimi</button>
         </div>
       </div>
       <div class="hero-art">
         <svg viewBox="0 0 320 260" width="320" height="260">
           <rect width="320" height="260" fill="none"/>
-          <polygon points="0,220 90,90 140,160 200,60 320,220" fill="var(--moss)" opacity="0.35"/>
-          <polygon points="0,230 120,120 180,190 260,110 320,230" fill="var(--forest)"/>
-          <circle cx="258" cy="54" r="26" fill="var(--gold)"/>
-          <path d="M40 230 L100 150 L140 190 L190 130 L320 230" stroke="var(--terra)" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <line x1="20" y1="230" x2="300" y2="230" stroke="var(--line)" stroke-width="1"/>
+          <polyline points="20,200 90,160 150,175 210,100 300,50" stroke="var(--terra)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="20" cy="200" r="6" fill="var(--forest)"/>
+          <circle cx="90" cy="160" r="6" fill="var(--forest)"/>
+          <circle cx="150" cy="175" r="6" fill="var(--forest)"/>
+          <circle cx="210" cy="100" r="6" fill="var(--gold)"/>
+          <circle cx="300" cy="50" r="7" fill="var(--terra)"/>
         </svg>
       </div>
     </div>
 
     <div class="featured">
       <div>
-        <p class="tag">In evidenza</p>
-        <h3>Il Sentiero degli Dei, da Agerola a Nocelle</h3>
-        <p class="excerpt">Un cammino sospeso tra mare e roccia sopra la Costiera Amalfitana, dove ogni curva del sentiero apre uno squarcio diverso sul Tirreno.</p>
-        <div class="meta-row"><span>7 km</span><span>+450 m</span><span>3h 30</span></div>
-        <button class="read-link" data-article="dei">Leggi il racconto <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none"/></svg></button>
+        <p class="tag">In questo momento</p>
+        <h3>Da systems analyst a marketing data analyst</h3>
+        <p class="excerpt">Anni passati a validare software, scrivere piani di test e interrogare database Oracle mi hanno insegnato a non fidarmi di un dato finché non ne capisco l'origine. È lo stesso approccio che sto portando nella misurazione del marketing: prima capire come nasce il dato, poi automatizzarlo, poi interpretarlo.</p>
+        <div class="meta-row"><span>3 anni in ruoli IT/analytics</span><span>Oracle SQL · SAP</span><span>PA e aziende complesse</span></div>
+        <button class="read-link" data-nav="percorso">Scopri il percorso completo <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none"/></svg></button>
       </div>
       <div class="art">
         <svg viewBox="0 0 300 220" width="100%">
           <rect width="300" height="220" fill="none"/>
-          <rect x="0" y="150" width="300" height="70" fill="var(--gold)" opacity="0.25"/>
-          <polygon points="0,150 60,60 110,120 170,40 300,150" fill="var(--terra)" opacity="0.85"/>
-          <polygon points="0,160 90,100 150,150 220,80 300,160" fill="var(--forest)"/>
+          <rect x="30" y="140" width="34" height="60" fill="var(--moss)"/>
+          <rect x="90" y="110" width="34" height="90" fill="var(--forest)"/>
+          <rect x="150" y="70" width="34" height="130" fill="var(--terra)"/>
+          <rect x="210" y="40" width="34" height="160" fill="var(--gold)"/>
+          <line x1="20" y1="200" x2="270" y2="200" stroke="var(--line)" stroke-width="1"/>
         </svg>
       </div>
     </div>
 
     <div style="padding:10px 0 60px; border-top:1px solid var(--line); padding-top:50px;">
       <div class="section-head">
-        <h2>Ultimi racconti</h2>
-        <button class="see-all" data-nav="articles">Vedi tutti gli articoli</button>
+        <h2>Progetti in corso</h2>
+        <button class="see-all" data-nav="progetti">Vedi tutti i progetti</button>
       </div>
-      <div id="homeArticleList"></div>
+      <div id="homeProjectList"></div>
     </div>
   </section>
 
-  <!-- ARTICLES LIST -->
-  <section class="page" id="page-articles">
+  <!-- PROGETTI LIST -->
+  <section class="page" id="page-progetti">
     <div style="padding:56px 0 10px;">
-      <p class="eyebrow" style="color:var(--moss)">Archivio</p>
-      <h1 style="font-size:clamp(2rem,4vw,2.8rem)">Tutti gli articoli</h1>
-      <p style="margin-top:14px; color:var(--text-soft); max-width:52ch;">Quattro cammini, quattro paesaggi diversi. Scegli quello che ti somiglia oggi.</p>
+      <p class="eyebrow" style="color:var(--moss)">In costruzione</p>
+      <h1 style="font-size:clamp(2rem,3.6vw,2.6rem)">I progetti che sto costruendo</h1>
+      <p style="margin-top:14px; color:var(--text-soft); max-width:54ch;">Non troverai case study già chiusi: troverai il percorso reale, aggiornato via via che avanzo — audit, integrazioni, primi script.</p>
     </div>
-    <div class="article-rows" id="articlesFullList" style="margin-top:36px;"></div>
+    <div class="article-rows" id="projectsFullList" style="margin-top:36px;"></div>
   </section>
 
-  <!-- ARTICLE DETAIL (shared template) -->
+  <!-- PROJECT DETAIL (shared template) -->
   <section class="page" id="page-detail">
     <div class="article-detail">
-      <button class="back-link" data-nav="articles">
+      <button class="back-link" data-nav="progetti">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M19 12H5M11 6l-6 6 6 6" stroke="currentColor" stroke-width="2" fill="none"/></svg>
-        Torna agli articoli
+        Torna ai progetti
       </button>
       <p class="tag" id="detailTag"></p>
       <h1 id="detailTitle"></h1>
@@ -330,38 +335,48 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="page" id="page-about">
+  <!-- PERCORSO -->
+  <section class="page" id="page-percorso">
     <div class="about-hero">
       <div>
-        <p class="eyebrow" style="color:var(--moss)">Chi scrive</p>
-        <h1>Cammino, scrivo, torno a casa con le scarpe sporche.</h1>
-        <p>Mi chiamo Elena Cortesi. Da otto anni percorro sentieri italiani con un taccuino nello zaino, raccogliendo dislivelli, incontri e il tempo che serve davvero per arrivare — non quello segnato sui cartelli.</p>
+        <p class="eyebrow" style="color:var(--moss)">Chi sono</p>
+        <h1>Rigore da analista, obiettivo nel marketing.</h1>
+        <p>Sono consulente IT e systems analyst, con esperienza nella progettazione, sviluppo e validazione di software per progetti di trasformazione digitale nella Pubblica Amministrazione e in contesti aziendali complessi. Vengo da un percorso in Economia e Gestione Aziendale, e negli anni ho lavorato molto su analisi funzionale, qualità del software e comunicazione di risultati tecnici a stakeholder non tecnici.</p>
+        <p style="margin-top:16px;">Oggi sto portando lo stesso rigore nel marketing data & measurement: studio SEO aggiornata al 2026, mi specializzo su GA4, AI search e automazione con Python, con l'obiettivo di lavorare come freelance su misurazione, dati e automazione dei processi di marketing.</p>
         <div class="stat-strip">
-          <div><p>63</p><p>sentieri percorsi</p></div>
-          <div><p>8</p><p>regioni attraversate</p></div>
-          <div><p>2018</p><p>primo racconto pubblicato</p></div>
+          <div><p>3</p><p>anni in ruoli IT / analisi dati</p></div>
+          <div><p>SAP</p><p>FI, CO · RISE Public Cloud</p></div>
+          <div><p>2026</p><p>anno della transizione</p></div>
         </div>
       </div>
       <div>
         <svg viewBox="0 0 300 260" width="100%">
-          <polygon points="0,220 70,100 120,170 180,70 300,220" fill="var(--moss)" opacity="0.4"/>
-          <polygon points="20,230 100,130 150,190 220,110 300,230" fill="var(--forest)"/>
-          <circle cx="240" cy="60" r="22" fill="var(--gold)"/>
+          <line x1="30" y1="60" x2="30" y2="220" stroke="var(--line)" stroke-width="1"/>
+          <circle cx="30" cy="200" r="7" fill="var(--forest)"/>
+          <circle cx="30" cy="130" r="7" fill="var(--terra)"/>
+          <circle cx="30" cy="70" r="7" fill="var(--gold)"/>
+          <line x1="30" y1="200" x2="270" y2="200" stroke="var(--line)" stroke-width="1" stroke-dasharray="4 4"/>
+          <line x1="30" y1="130" x2="240" y2="130" stroke="var(--line)" stroke-width="1" stroke-dasharray="4 4"/>
+          <line x1="30" y1="70" x2="200" y2="70" stroke="var(--line)" stroke-width="1" stroke-dasharray="4 4"/>
         </svg>
       </div>
     </div>
-    <div style="max-width:66ch; padding:40px 0 80px; border-top:1px solid var(--line); margin-top:40px;">
-      <p class="pull">Un sentiero non si racconta con l'altimetria. Si racconta con quello che cambia in chi lo percorre.</p>
-      <p style="color:var(--text-soft)">Sentieri nasce come diario personale e diventa, un cammino alla volta, una piccola guida per chi cerca itinerari veri: tempi onesti, difficoltà dichiarate, niente scorciatoie nel racconto.</p>
+
+    <div style="padding:50px 0 10px; border-top:1px solid var(--line); margin-top:40px;">
+      <p class="pull">Non parto da zero: parto da anni di rigore nella verifica dei dati. Ora lo applico al marketing.</p>
     </div>
+
+    <div class="section-head" style="margin-top:20px;">
+      <h2>Esperienza e percorso di studio</h2>
+    </div>
+    <div class="article-rows" id="timelineList" style="margin-bottom:70px;"></div>
   </section>
 
   <!-- CONTACT -->
   <section class="page" id="page-contact">
     <div style="padding:56px 0 0;">
       <p class="eyebrow" style="color:var(--moss)">Scrivimi</p>
-      <h1 style="font-size:clamp(2rem,4vw,2.8rem)">Racconta il tuo sentiero</h1>
+      <h1 style="font-size:clamp(2rem,3.6vw,2.6rem)">Parliamo di dati, misurazione o del prossimo progetto</h1>
     </div>
     <div class="contact-wrap">
       <form id="contactForm" onsubmit="return handleContact(event)">
@@ -372,11 +387,12 @@
         <p class="form-note" id="contactNote"></p>
       </form>
       <div class="contact-side">
-        <h3>Proponi un sentiero</h3>
-        <p>Hai un cammino da suggerire o vuoi correggere un dettaglio in un racconto? Scrivimi: rispondo sempre, prima o poi, di solito dopo essere tornata da una camminata.</p>
+        <h3>Lavoriamo insieme</h3>
+        <p>Sono nel pieno della transizione verso il marketing data & measurement: se hai un progetto piccolo su cui fare pratica insieme, o vuoi solo scambiare due chiacchiere su dati e automazione, scrivimi pure.</p>
         <div class="addr">
-          <p>elena@sentieri-esempio.it</p>
-          <p>Arezzo, Toscana</p>
+          <p>eleonora.muto@example.com</p>
+          <p>linkedin.com/in/eleonora-muto</p>
+          <p>Roma, Italia</p>
         </div>
       </div>
     </div>
@@ -386,107 +402,126 @@
 
 <footer>
   <div class="wrap">
-    <p>&copy; 2026 Sentieri — diario di cammini italiani.</p>
-    <p>Fatto a piedi, scritto a tavolino.</p>
+    <p>&copy; 2026 Eleonora Muto — Marketing Data & Measurement, AI Search, Automation.</p>
+    <p>Portfolio in costruzione, un passo alla volta.</p>
   </div>
 </footer>
 
 <script>
-  // ---------- DATA ----------
-  const articles = [
+  // ---------- DATA: progetti ----------
+  const projects = [
     {
-      id:'dei', tag:'Campania · Costiera Amalfitana',
-      title:'Il Sentiero degli Dei, da Agerola a Nocelle',
-      excerpt:'Un cammino sospeso tra mare e roccia sopra la Costiera Amalfitana, dove ogni curva del sentiero apre uno squarcio diverso sul Tirreno.',
-      km:'7 km', dislivello:'+450 m / -800 m', durata:'3h 30', difficolta:'Media',
+      id:'audit-seo', tag:'Progetto · In corso',
+      title:'Audit SEO del mio sito personale',
+      excerpt:'Sto analizzando la struttura di questo stesso sito — titoli, meta description, gerarchia dei contenuti, performance — applicando quello che sto studiando nel corso SEO 2026.',
+      status:'In corso', tool:'Screaming Frog, checklist SEO 2026', periodo:'Settembre 2026',
       artColor:'var(--terra)',
       body:[
-        'Si parte da Agerola con il mare ancora nascosto, coperto da una foschia leggera che il sole di mattina fatica a bucare. Il sentiero sale appena, poi si stende in falsopiano lungo il fianco della montagna, e il Tirreno comincia ad affacciarsi tra le fessure della roccia.',
-        'Dopo circa due chilometri il panorama si apre del tutto: sotto, Positano sembra un presepe rovesciato sulla scogliera, e il sentiero — stretto, a tratti scavato nella pietra — corre parallelo alla costa per chilometri.',
-        'Il tratto più suggestivo arriva a Colle Serra, dove la vista abbraccia Capri all\'orizzonte nelle giornate limpide. Qui il vento cambia, porta salsedine, e i pochi camminatori che si incrociano si fermano tutti nello stesso punto, senza essersi messi d\'accordo.',
-        'La discesa verso Nocelle è ripida, oltre milleseicento gradini scavati nella roccia calcarea. Le ginocchia se ne accorgono, ma il paese che si materializza in fondo, con le sue case bianche aggrappate al pendio, vale ogni scalino.'
+        'Il primo progetto pratico è il più a portata di mano: questo stesso sito. Prima di lavorare sui dati di qualcun altro, ho voluto capire cosa significa davvero fare un audit SEO — non in teoria, ma su un sito reale, anche se piccolo.',
+        'Sto passando in rassegna struttura dei titoli, meta description, gerarchia di heading, velocità di caricamento e leggibilità del codice per i motori di ricerca, seguendo la checklist che sto costruendo durante il corso SEO aggiornato al 2026.',
+        'Non è ancora un audit completo — è un diario di lavoro in corso. Man mano che avanzo, aggiornerò questa pagina con le scoperte fatte e le correzioni applicate.'
       ]
     },
     {
-      id:'amiata', tag:'Toscana · Monte Amiata',
-      title:'L\'anello del Monte Amiata in autunno',
-      excerpt:'Un\'ascesa dolce attraverso faggete che cambiano colore ogni settimana, fino a una vetta che in una giornata terza offre vista dal Tirreno all\'Adriatico.',
-      km:'14 km', dislivello:'+680 m', durata:'5h', difficolta:'Medio-alta',
-      artColor:'var(--moss)',
-      body:[
-        'Il Monte Amiata è un vulcano spento che i toscani chiamano affettuosamente "la montagna", come se non ce ne fosse bisogno di altre. Il sentiero dell\'anello parte da Prato delle Macinaie, tra gli ultimi castagneti coltivati e i primi faggi.',
-        'A ottobre la faggeta si accende di un rosso ramato che cambia sfumatura di settimana in settimana. Il sentiero sale con pendenza costante, mai brutale, tra tronchi coperti di muschio e il fruscio secco delle foglie sotto gli scarponi.',
-        'In vetta, a 1738 metri, la croce di ferro segna il punto più alto della provincia di Grosseto. Nelle giornate terse la vista arriva fino al Mar Tirreno da un lato e, dicono i camminatori più esperti, fino all\'Adriatico dall\'altro — anche se personalmente non sono mai riuscita a confermarlo con certezza.',
-        'La discesa segue un tracciato diverso, passando per un\'antica faggeta monumentale dove alcuni alberi superano i due secoli di vita. È il punto in cui, ogni volta, rallento il passo senza volerlo.'
-      ]
-    },
-    {
-      id:'dolomiti', tag:'Trentino-Alto Adige · Dolomiti',
-      title:'Tre giorni sull\'Alta Via n.1 delle Dolomiti',
-      excerpt:'Dal Lago di Braies al Passo Duran, un\'immersione in pareti verticali e rifugi di alta quota che raccontano un secolo di alpinismo.',
-      km:'42 km (3 tappe)', dislivello:'+2100 m totali', durata:'3 giorni', difficolta:'Alta',
+      id:'ga4-setup', tag:'Progetto · Prossimo passo',
+      title:'Collegamento di GA4 e Search Console',
+      excerpt:'Una volta completato il corso SEO, il passo successivo è collegare Google Analytics 4 e Search Console a questo sito, per iniziare a leggere dati reali invece che teoria.',
+      status:'Prossimo passo', tool:'GA4, Google Search Console', periodo:'In programma',
       artColor:'var(--gold)',
       body:[
-        'L\'Alta Via n.1 comincia sulle rive del Lago di Braies, così fotografato da sembrare quasi finto quando lo si vede dal vivo per la prima volta. Ma bastano venti minuti di cammino per lasciarsi la folla alle spalle ed entrare in un silenzio fatto solo di rocce e marmotte.',
-        'La prima tappa porta al Rifugio Biella, arroccato sotto le pareti della Croda del Becco. Si dorme in camerata, si cena a orari fissi, e si scopre che il rifugio alpino resta uno dei pochi luoghi dove sconosciuti condividono tavolo e racconti senza pensarci due volte.',
-        'Il secondo giorno attraversa un altopiano carsico che sembra un paesaggio lunare, prima di scendere tra boschi di larici verso il Rifugio Sennes. Le Dolomiti qui mostrano la loro doppia natura: pareti verticali di roccia chiara sopra pascoli dolcissimi.',
-        'L\'ultima tappa, verso il Passo Duran, è la più impegnativa: tratti attrezzati, passaggi esposti, e un silenzio che si fa quasi fisico quando ci si ferma a guardare indietro il tratto percorso.'
+        'Questo è il passo che segue naturalmente l\'audit SEO: senza dati reali, ogni ottimizzazione resta teorica. L\'obiettivo è collegare GA4 e Search Console a questo sito e iniziare a osservare query, impression e comportamento degli utenti.',
+        'Da qui in poi il lavoro diventerà interpretare i numeri, non solo raccoglierli — ed è esattamente la competenza che voglio costruire per potermi proporre come freelance su misurazione e dati di marketing.'
       ]
     },
     {
-      id:'monviso', tag:'Piemonte · Alpi Cozie',
-      title:'L\'anello del Monviso e le sorgenti del Po',
-      excerpt:'Un cammino di alta montagna attorno alla piramide del Monviso, dalla sorgente del fiume più lungo d\'Italia ai laghi glaciali del versante francese.',
-      km:'28 km (2 tappe)', dislivello:'+1500 m', durata:'2 giorni', difficolta:'Alta',
+      id:'python-report', tag:'Progetto · In programma',
+      title:'Primo script Python per l\'automazione dei report',
+      excerpt:'Dopo aver collegato GA4 e Search Console, il passo successivo è scrivere uno script Python che scarica i dati automaticamente e genera un report, invece di farlo a mano ogni volta.',
+      status:'In programma', tool:'Python, pandas, API GA4/Search Console', periodo:'In programma',
       artColor:'var(--forest)',
       body:[
-        'Il Monviso si vede da lontano molto prima di raggiungerlo: una piramide di roccia che spicca isolata tra le Alpi Cozie, visibile perfino dalla pianura padana nelle giornate limpide. Il sentiero parte da Pian del Re, dove una piccola sorgente segna l\'inizio ufficiale del fiume Po.',
-        'Si sale lungo un vallone glaciale punteggiato di laghetti color turchese, con lo sguardo sempre rivolto alla parete nord della montagna, quella che nel 1861 vide la prima salita alpinistica italiana della storia.',
-        'Il Rifugio Quintino Sella, a 2640 metri, è il punto più alto della tappa e uno dei più antichi rifugi alpini d\'Europa. Da qui il panorama si apre sul versante francese, con creste che si susseguono fino a perdersi in lontananza.',
-        'Il secondo giorno scende attraverso il Colle delle Traversette, un passaggio scavato nella roccia già in epoca medievale per collegare Italia e Francia — un dettaglio che cambia il modo di guardare quella montagna per sempre.'
+        'L\'obiettivo finale di questo terzo progetto è unire due mondi che già conosco separatamente: l\'analisi dei dati (che faccio da anni con SQL) e il marketing measurement.',
+        'Voglio scrivere uno script che si colleghi alle API di Search Console e Google Analytics, scarichi i dati periodicamente e generi automaticamente un report leggibile — il primo vero esempio pratico di "automation" nel mio percorso.'
       ]
     }
   ];
 
+  // ---------- DATA: timeline percorso ----------
+  const timeline = [
+    {
+      id:'inmatica', tag:'Esperienza · In corso',
+      title:'Software Analyst / IT Analyst — Inmatica S.p.A.',
+      excerpt:'Supporto alle attività elettorali presso il Ministero dell\'Interno: scenari elettorali, piani di test, validazione del sistema DAIT tramite Oracle SQL.',
+      periodo:'06/2025 – presente', status:'In corso',
+      artColor:'var(--forest)'
+    },
+    {
+      id:'tecnolife', tag:'Esperienza · Conclusa',
+      title:'IT & SAP Consultant — Tecnolife',
+      excerpt:'Specifiche funzionali per ANAC/CONSIP, gestione test con Jira, SAP RISE (moduli FI e CO), demo ai clienti, mentoring di risorse junior.',
+      periodo:'12/2023 – 05/2025', status:'Conclusa',
+      artColor:'var(--moss)'
+    },
+    {
+      id:'formazione', tag:'Formazione · In corso',
+      title:'Formazione in Marketing Data & Measurement',
+      excerpt:'Corso SEO aggiornato al 2026, poi GA4, Search Console e automazione con Python — costruita in parallelo su questo sito, passo dopo passo.',
+      periodo:'2026 – in corso', status:'In corso',
+      artColor:'var(--terra)'
+    }
+  ];
+
   // ---------- RENDER HELPERS ----------
-  function mountainSVG(color, seed){
+  function graphSVG(color, seed){
     const variants = [
-      `<svg viewBox="0 0 300 200" width="100%" height="100%"><polygon points="0,150 60,70 110,120 170,50 300,150" fill="${color}" opacity="0.85"/><polygon points="0,160 90,100 150,150 220,80 300,160" fill="var(--forest)"/><circle cx="250" cy="45" r="18" fill="var(--gold)"/></svg>`,
-      `<svg viewBox="0 0 300 200" width="100%" height="100%"><polygon points="0,140 80,60 140,130 200,40 300,140" fill="${color}" opacity="0.85"/><polygon points="0,155 100,90 160,145 240,70 300,155" fill="var(--moss)"/><circle cx="60" cy="40" r="16" fill="var(--gold)"/></svg>`,
-      `<svg viewBox="0 0 300 200" width="100%" height="100%"><polygon points="0,145 50,55 100,110 150,35 200,100 300,145" fill="${color}" opacity="0.85"/><polygon points="0,158 70,110 130,150 190,95 300,158" fill="var(--forest)"/><circle cx="230" cy="50" r="17" fill="var(--gold)"/></svg>`
+      `<svg viewBox="0 0 300 200" width="100%" height="100%"><line x1="20" y1="170" x2="280" y2="170" stroke="var(--line)" stroke-width="1"/><rect x="40" y="120" width="30" height="50" fill="${color}" opacity="0.85"/><rect x="100" y="90" width="30" height="80" fill="var(--forest)"/><rect x="160" y="60" width="30" height="110" fill="var(--gold)"/><rect x="220" y="30" width="30" height="140" fill="${color}"/></svg>`,
+      `<svg viewBox="0 0 300 200" width="100%" height="100%"><circle cx="40" cy="150" r="8" fill="${color}"/><circle cx="140" cy="90" r="8" fill="var(--gold)"/><circle cx="240" cy="50" r="8" fill="var(--forest)"/><line x1="40" y1="150" x2="140" y2="90" stroke="${color}" stroke-width="2"/><line x1="140" y1="90" x2="240" y2="50" stroke="${color}" stroke-width="2"/></svg>`,
+      `<svg viewBox="0 0 300 200" width="100%" height="100%"><line x1="20" y1="170" x2="280" y2="170" stroke="var(--line)" stroke-width="1"/><polyline points="30,150 90,120 150,135 210,70 270,40" stroke="${color}" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="270" cy="40" r="6" fill="var(--gold)"/></svg>`
     ];
     return variants[seed % variants.length];
   }
 
-  function renderArticleRow(a, i){
-    return `<button class="article-row" data-article="${a.id}">
-      <div class="thumb">${mountainSVG(a.artColor, i)}</div>
+  function renderProjectRow(p, i){
+    return `<button class="article-row" data-project="${p.id}">
+      <div class="thumb">${graphSVG(p.artColor, i)}</div>
       <div>
-        <h4>${a.title}</h4>
-        <p class="excerpt">${a.excerpt}</p>
+        <h4>${p.title}</h4>
+        <p class="excerpt">${p.excerpt}</p>
       </div>
-      <div class="stats"><span>${a.km}</span><span>${a.durata}</span></div>
+      <div class="stats"><span>${p.periodo}</span><span class="status">${p.status}</span></div>
     </button>`;
   }
 
-  document.getElementById('homeArticleList').innerHTML =
-    '<div class="article-rows">' + articles.slice(0,3).map(renderArticleRow).join('') + '</div>';
-  document.getElementById('articlesFullList').innerHTML =
-    articles.map(renderArticleRow).join('');
+  function renderTimelineRow(t, i){
+    return `<div class="article-row" style="cursor:default;">
+      <div class="thumb">${graphSVG(t.artColor, i)}</div>
+      <div>
+        <h4>${t.title}</h4>
+        <p class="excerpt">${t.excerpt}</p>
+      </div>
+      <div class="stats"><span>${t.periodo}</span><span class="status">${t.status}</span></div>
+    </div>`;
+  }
 
-  function openArticle(id){
-    const a = articles.find(x => x.id === id);
-    if(!a) return;
-    document.getElementById('detailTag').textContent = a.tag;
-    document.getElementById('detailTitle').textContent = a.title;
-    document.getElementById('detailMeta').innerHTML = `<span>${a.km}</span><span>${a.dislivello}</span><span>${a.durata}</span>`;
-    document.getElementById('detailArt').innerHTML = mountainSVG(a.artColor, a.id.length);
+  document.getElementById('homeProjectList').innerHTML =
+    '<div class="article-rows">' + projects.slice(0,2).map(renderProjectRow).join('') + '</div>';
+  document.getElementById('projectsFullList').innerHTML =
+    projects.map(renderProjectRow).join('');
+  document.getElementById('timelineList').innerHTML =
+    timeline.map(renderTimelineRow).join('');
+
+  function openProject(id){
+    const p = projects.find(x => x.id === id);
+    if(!p) return;
+    document.getElementById('detailTag').textContent = p.tag;
+    document.getElementById('detailTitle').textContent = p.title;
+    document.getElementById('detailMeta').innerHTML = `<span>${p.periodo}</span><span>${p.tool}</span>`;
+    document.getElementById('detailArt').innerHTML = graphSVG(p.artColor, p.id.length);
     document.getElementById('detailStats').innerHTML = `
-      <div><p>Lunghezza</p><p>${a.km}</p></div>
-      <div><p>Dislivello</p><p>${a.dislivello}</p></div>
-      <div><p>Durata</p><p>${a.durata}</p></div>
-      <div><p>Difficoltà</p><p>${a.difficolta}</p></div>`;
-    const paras = a.body.map((t,i) => `<p class="${i===0?'lede':''}">${t}</p>`);
+      <div><p>Stato</p><p>${p.status}</p></div>
+      <div><p>Strumenti</p><p>${p.tool}</p></div>
+      <div><p>Periodo</p><p>${p.periodo}</p></div>`;
+    const paras = p.body.map((t,i) => `<p class="${i===0?'lede':''}">${t}</p>`);
     document.getElementById('detailBody').innerHTML = paras.join('');
     showPage('detail');
     window.scrollTo({top:0, behavior:'instant'});
@@ -511,10 +546,10 @@
       window.scrollTo({top:0, behavior:'smooth'});
       return;
     }
-    const artBtn = e.target.closest('[data-article]');
-    if(artBtn){
+    const projBtn = e.target.closest('[data-project]');
+    if(projBtn){
       e.preventDefault();
-      openArticle(artBtn.dataset.article);
+      openProject(projBtn.dataset.project);
     }
   });
 
@@ -531,8 +566,3 @@
 
 </body>
 </html>
-
-</body>
-
-</html>
-```
